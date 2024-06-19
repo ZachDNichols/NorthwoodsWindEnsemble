@@ -225,6 +225,7 @@
 }
 
 .concerts {
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -241,7 +242,6 @@ body {
     align-items: center;
     align-self: center;
     justify-content: center;
-    color: black;
     z-index: 0;
     color: white;
     text-shadow: #000 2px 0 10px;
@@ -301,6 +301,73 @@ body {
     margin-bottom: -2rem;
 }
 
+body::after {
+    background-image: url("./images/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    position:fixed;
+}
+
+@media screen and (max-width: 800px)
+{
+
+.directors img{
+        width: 10rem;
+    }
+
+    .director {
+        margin: 1rem 1rem 1rem;
+    }
+
+    .rehearsals div{
+        margin: 1rem 1rem;
+    }
+
+    .rehearsals div p {
+        display: block;
+        width: 10rem;
+    }
+
+    .location p{
+        margin-bottom: 0;
+        margin-top: -1rem;
+    }
+
+    .location p {
+        margin-bottom: 0rem;
+    }
+
+    .location a {
+        margin-bottom: 8rem;
+    }
+
+    .location h2 {
+        margin: 1rem 1rem;
+    }
+
+
+
+    .socials {
+        margin-bottom: 1rem;
+    }
+
+    .socials a {
+        margin: 1rem;
+    }
+
+    .directorContainer h2 {
+        margin-bottom: -2rem;
+    }
+}
 
 
 
