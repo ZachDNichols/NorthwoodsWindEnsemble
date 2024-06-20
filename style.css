@@ -316,6 +316,7 @@ body::after {
     position:fixed;
     filter: blur(5px);
     -webkit-filter: blur(5px);
+    overflow: hidden;
 }
 
 @media screen and (max-width: 800px)
@@ -326,7 +327,6 @@ body::after {
 
     body, html{
         font-size: .8rem;
-        overflow: scroll;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -336,6 +336,9 @@ body::after {
         bottom: 0;
     }
 
+    body {
+        overflow-x: scroll;
+    }
 
 .directors img{
         width: 8rem;
